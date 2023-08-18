@@ -1,0 +1,10 @@
+version: '3'
+services:
+  my-java-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mi-imagen-java
+    container_name: mi-contenedor-java
+    ports:
+      - "8080:8080"
